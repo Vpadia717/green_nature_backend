@@ -50,7 +50,6 @@ app.put("/updatefertilizerproducts", async (req, res, next) => {
   }
 });
 
-
 app.put("/deletefertlizerproducts", async (req, res, next) => {
   try {
     const FieldValue = require("firebase-admin").firestore.FieldValue;
