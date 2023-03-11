@@ -1,20 +1,37 @@
+require ('dotenv').config();
 const express = require('express')
 const { FieldValue } = require('firebase-admin/firestore')
 const { getAuth } = require('firebase-admin/auth')
-const app = express()
-const port = 5000
+const port = process.env.PORT||1236
 const { db } = require('./firebase.js')
-const { response } = require('express')
 const cors = require('cors')
+const { firebase } = require('firebase-admin')
+const cookieParser = require('cookie-parser')
+const session = require('express-session')
+const userrouter = require('./routes/userRoute');
+const productrouter = require('./routes/productRoute');
 
+const app = express()
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
+app.use(cookieParser());
+app.use(session({
+  secret: "<your-secret>",
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: true }
+}));
+
+
 
 console.log("this is connection of database" + db)
 app.get('/', (req, res) => {
     res.send("hello world")
 })
+
+app.use('/api/user',userrouter)
+app.use('/product/product',productrouter)
 
 app.post('/signup', async (req, res) => {
 
@@ -23,7 +40,6 @@ app.post('/signup', async (req, res) => {
     //     status:false,
     //     message:'your field missing'
     // }  
-
     if (!password || !email) {
         return res.status(400).send({ message: 'Missing fields' })
     }
@@ -39,7 +55,7 @@ app.post('/signup', async (req, res) => {
             .then((userRecord) => {
                 // See the UserRecord reference doc for the contents of userRecord.
                 console.log('Successfully created new user:', userRecord.uid);
-                return response.status(200).send({ msg: 'register successfully' })
+                return res.status(200).send({ msg: 'register successfully' })
             })
             .catch((error) => {
                 console.log('Error creating new user:', error);
@@ -47,6 +63,21 @@ app.post('/signup', async (req, res) => {
             });
     }
 })
+
+app.get("/loginwithgoogle",(req,res)=>{
+    const provider =new firebase.getAuth().GoogleAuthProvider();
+    provider.addScope("profile");
+    provider.addScope("email");
+    req.session.firebaseRedirect ="/dashbord";
+    firebase.auth().signInWithPopup(provider).then(function(result){
+        var token = result.credential.accessToken;
+        var user  =result.user;
+        console.log("user:"+user)
+        console.log(result)
+    })
+});
+
+
 
 app.get('/getalluser', async (req, res) => {
     await getAuth()

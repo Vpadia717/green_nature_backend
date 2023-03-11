@@ -1,4 +1,4 @@
-app.put("/addfertlizerproducts", async (req, res, next) => {
+const addfertlizerproducts = async (req, res, next) => {
     try {
         const id = "fertilizer";
         const data = req.body;
@@ -10,9 +10,11 @@ app.put("/addfertlizerproducts", async (req, res, next) => {
     } catch (error) {
         next(error);
     }
-});
+}
 
-app.put("/addplantproducts", async (req, res, next) => {
+
+
+const addplantproducts = async (req, res, next) => {
     try {
         const id = "plant";
         const data = req.body;
@@ -24,9 +26,12 @@ app.put("/addplantproducts", async (req, res, next) => {
     } catch (error) {
         next(error)
     }
-});
+}
 
-app.put("/addtoolsproducts", async (req, res, next) => {
+
+
+
+const addtoolsproducts = async (req, res, next) => {
     try {
         const id = "tools";
         const data = req.body;
@@ -38,9 +43,10 @@ app.put("/addtoolsproducts", async (req, res, next) => {
     } catch (error) {
         next(error)
     }
-});
+}
 
-app.put("/updatefertilizerproducts", async (req, res, next) => {
+
+const updatefertilizerproducts = async (req, res, next) => {
     try {
         const id = "fertilizer";
         // const pid = req.body.id;
@@ -51,9 +57,9 @@ app.put("/updatefertilizerproducts", async (req, res, next) => {
     } catch (err) {
         next(err);
     }
-});
+}
 
-app.put("/updateplantproducts", async (req, res, next) => {
+const updateplantproducts = async (req, res, next) => {
     try {
         const id = "plant";
         // delete req.body.id;
@@ -64,9 +70,11 @@ app.put("/updateplantproducts", async (req, res, next) => {
     } catch (err) {
         next(err);
     }
-});
+}
 
-app.put("/updatetoolsproducts", async (req, res, next) => {
+
+
+const updatetoolsproducts =async(req,res,next)=>{
     try {
         const id = "tool";
         delete req.body.id;
@@ -77,4 +85,7 @@ app.put("/updatetoolsproducts", async (req, res, next) => {
     } catch (err) {
         next(err);
     }
-});
+}
+
+
+module.exports(addfertlizerproducts,addplantproducts,addtoolsproducts,updatefertilizerproducts,updateplantproducts,updatetoolsproducts);
