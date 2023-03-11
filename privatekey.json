@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "green-nature-c535b",
+    "private_key_id": "060f41397d2771ed3815772d2d42a4435592ce3e",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDBZ06ODDU9t1E8\nQw5npAa7ncTx5uijtANx1YZU5/Mc4k5bqkznl+w7GjfTntGe7w/MgOoDd+6tdpVI\ngKWSdFpm2oUMYyOBr0Jt4JbgZxqLrWqXVB3YcU4SN0Ne/+i3onHaA+tcebwvx8vY\n2rWT0ghrkyir7R8vMjco08QI5Sh6z57PmHfx6mAMx5HHA7VY0pdPWOkt8d/Ehrpz\nF0DZNGwBzAyxjjVsaxwVANFOZZ1iIDAQXvBNEcyNfJIZWdL1KCglkYIMu3F/xbD2\nUUzMs2pz7WAXMx6FaTzAj+G/roUSzMKN3TIg4h4omM/SgFjc/9eAiVsrvMcnKHH7\n67Oa5/CTAgMBAAECggEAC4egHEHIDsTV9/S7cBxMNnUiX5V3ewLpTakAGCG30ZoA\nN+DAMvJQp/lZKKmIL6Rq2bM5wDkvJnIyVh8tP7zmAsm2MtXaMQoEuM4x0HD1GSye\ndSUTnmqqz9UxlAFHm2L4zJl9N4ceW+7aTTRErOpRjDA6tX0uZb7loO52+lzG/AM3\n9bxUTLn3ua6SzyKNFSfl13BnUy3Hn3uOayhoQ9cpc1qQ4yrWDOu8qRy999uTG5fy\nzdgD6tEng2z7UMoBFOgzYiOGOpiJmPAsdvsfkqk28DMGRYUDlG39pnP1b8L+T7uB\nsybvT4I67rfSWlid5G2dgg27IItMfCof/M4cT1e+KQKBgQD2nh21c47eXODh+tPm\n4sQr8amN0rOvgCKT3Ey/R5qlOt7a7LMPXcP6XWN2q3R51g87fIp3pR82wcfr7Fhw\n7CMRZ8XpZT9bygHbqft5OBSBhOnM+N+ZNUpCucKblVDi3txaiIvZD8vdnpwVGozV\nUXQYzbS/xZkigrPLYOLLfe4StQKBgQDIwuwtr63XBYVJZ1KVzXdBzVIh63P/CrgG\n9b7yQLeBSddb+8hlConviUNil08JQt91iomX/LrvIbSZvcqMXoJqhgp5hdIrf4bN\n8w3Hq18NAorZhT6tg+mip5835lMDlrHeYOC/lPM70yChrXgu4soxYuBS6XxcJKUg\nz7WNqUIbJwKBgQCsXZSsFqk7NzUiHHpwO/waLpxv+F0IA4mnSGkHo9ctNrk90APS\ncJmh6hWzgmA1K2yYChKJTwpC7it59EVYH2LfLmWAG/itgcHMssCFV7HVWH1Eeolk\n/n75pfWjYjgXaOYgDKGZw1WcftfeVCEskvKOx29WPZgrK6jYM84vpcN4pQKBgHEm\nc0iYkEj1IpcpdcFaiVF78EOP2dOv7eJ2VQVidkqXHJsKQHq6Qt3PpjwF/ZTBrQIp\nb71Kwu0OOSTBdExC5Aw3ueWeB8NeX9LpnyWfL7Y8bZeFYrsW8vIquTEfTkBiiaNF\nRMaVo7VfHDAjfe4nAkBtcvMoB2BDgxIIH1JVSB3XAoGBANuzPkqkIb/BHNeqGvHx\nfVK+jhTBCoTxAK663p56pzlrVaEMXZ1cP7q3oUTc8iyaZkAePI7ig0Opr/awlvQT\nk5XZFvfaTxog6+0toaCL/ZWMh0/ZHMVkE3ZfCDfUkYrgqX56TRRe77lniQq7qzzg\nKPU7Gv6Wf4xINW4AFO/3/CB3\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-8d4lp@green-nature-c535b.iam.gserviceaccount.com",
+    "client_id": "104550835467432333430",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-8d4lp%40green-nature-c535b.iam.gserviceaccount.com"
+  }

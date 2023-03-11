@@ -1,0 +1,28 @@
+### GET FRIENDs GET http://localhost:5000/products
+
+### GET FRIEND GET http://localhost:5000/products/james
+
+### ADD A FRIEND 
+POST http://localhost:5000/addproduct 
+Content-Type: application/json
+
+{
+    "name": "COCO PEET", 
+    "status": "in stocks"
+}
+
+### UPDATE STATUS OF A FRIEND 
+PATCH http://localhost:5000/changestatus 
+Content-Type: application/json
+
+{
+"name": "tomato", "newStatus": "friend"
+}
+
+### DELETE A FRIEND 
+DELETE http://localhost:5000/products 
+Content-Type: application/json
+
+{
+"name": "banana"
+}
